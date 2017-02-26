@@ -1,9 +1,16 @@
+//Variables
 @green: #00B390;
 @anti-flash-white: #F1F2F7;
 @navy-blue: #293849;
 @darker-navy-blue: #242F3E;
 @text-color: #435C78;
 
+//Mixins
+.topLists () {
+  list-style: none;
+}
+
+//Styles
 html {
   position: relative;
   min-height: 100%;
@@ -13,9 +20,29 @@ body {
   margin-bottom: 100px;
 }
 
+div.top-links {
+  background-color: #e2e2e2;
+  height: 20px;
+  width: 100%;
+}
 
+ul.contact-top {
+  .topLists();
+  li {
+    display: inline-block;
+  }
+}
 
+ul.social-top {
+  .topLists();
+  li {
+    display: inline-block;
+  }
+}
 
+section#portfolio > div.container {
+  background-color: #eee;
+}
 
 
 
