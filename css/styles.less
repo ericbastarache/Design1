@@ -8,7 +8,7 @@
 @bree-serif: 'Bree Serif', serif;
 @black: #333;
 @white: #fff;
-@ubuntu-condensed: 'Ubuntu Condensed', sans-serif;
+@roboto: 'Roboto', sans-serif;
 //Mixins
 .topLists () {
   list-style: none;
@@ -65,7 +65,7 @@ nav.navbar-design-1 {
   }
 
   ul.navbar-nav {
-    font-family: @ubuntu-condensed;
+    font-family: @roboto;
     li a {
       color: @black;
       font-size: 16px;
@@ -86,11 +86,20 @@ div.jumbotron {
     text-transform: uppercase;
     font-family: @bree-serif;
   }
+
+  p {
+    color: darken(@white, 40%);
+  }
 }
 
 
 
 section#description {
+
+  h2 {
+    font-family: @roboto;
+    font-size: 34px;
+  }
 
   i.fa-heart-o, i.fa-lightbulb-o, i.fa-star-o {
     color: @green;
