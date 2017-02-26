@@ -4,7 +4,11 @@
 @navy-blue: #293849;
 @darker-navy-blue: #242F3E;
 @text-color: #435C78;
-
+@patua-one: 'Patua One', cursive;
+@bree-serif: 'Bree Serif', serif;
+@black: #333;
+@white: #fff;
+@ubuntu-condensed: 'Ubuntu Condensed', sans-serif;
 //Mixins
 .topLists () {
   list-style: none;
@@ -24,21 +28,67 @@ div.top-links {
   background-color: #e2e2e2;
   height: 20px;
   width: 100%;
-}
 
-ul.contact-top {
-  .topLists();
-  li {
-    display: inline-block;
+  ul.contact-top {
+    .topLists();
+    position: relative;
+    left: 17.3%;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  ul.social-top {
+    .topLists();
+    position: relative;
+    right: 20%;
+    li {
+      margin-right: 15px;
+      display: inline-block;
+      a {
+        color: @black;
+      }
+    }
   }
 }
 
-ul.social-top {
-  .topLists();
-  li {
-    display: inline-block;
+nav.navbar-design-1 {
+  border: none;
+  margin-top: 15px;
+
+  a.navbar-brand {
+    font-family: @patua-one;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: @black;
+  }
+
+  ul.navbar-nav {
+    font-family: @ubuntu-condensed;
+    li a {
+      color: @black;
+      font-size: 16px;
+    }
   }
 }
+
+div.jumbotron {
+  color: @white;
+  background-image: url('../images/diagram.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+
+  h1 {
+    margin-top: 250px;
+    text-transform: uppercase;
+    font-family: @bree-serif;
+  }
+}
+
+
 
 section#description {
 
